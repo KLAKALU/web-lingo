@@ -118,7 +118,6 @@ function IndexPopup() {
   const onSubmit = (data: LoginForm) => {
     console.log(data)
     signUp(data.email, data.password)
-    setLoggedIn(true)
   };
 
   return (
