@@ -10,12 +10,14 @@
     "test": "plasmo test"
   },
   "dependencies": {
+    "@parcel/optimizer-htmlnano": "2.9.3",
     "@plasmohq/storage": "^1.9.0",
     "axios": "^1.6.2",
     "plasmo": "0.84.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "^7.48.2"
+    "react-hook-form": "^7.48.2",
+    "svgo": "^3.0.2"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
@@ -32,6 +34,14 @@
   "manifest": {
     "host_permissions": [
       "https://*/*"
+    ],
+    "permissions": [
+      "scripting",
+      "action",
+      "storage",
+      "tabs",
+      "contextMenus",
+      "contextMenus.onClicked.addListener"
     ]
   }
 }
